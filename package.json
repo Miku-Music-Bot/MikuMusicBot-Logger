@@ -1,0 +1,38 @@
+{
+	"name": "mikumusicbot-logger",
+	"version": "1.0.0",
+	"description": "Logger for Miku",
+	"main": "./lib/logger.js",
+	"scripts": {
+		"lint": "eslint . --ext .ts",
+		"build": "tsc -b",
+		"pretest": "npm run build",
+		"test": "nyc mocha ./built/**/*.test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Miku-Music-Bot/MikuMusicBot-Launcher.git"
+	},
+	"author": "Bwu1324",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/Miku-Music-Bot/MikuMusicBot-Launcher/issues"
+	},
+	"homepage": "https://github.com/Miku-Music-Bot/MikuMusicBot-Launcher#readme",
+	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
+		"@types/node": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"chai": "^4.3.6",
+		"eslint": "^8.18.0",
+		"mocha": "^10.0.0",
+		"nyc": "^15.1.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"fs-extra": "^10.1.0",
+		"path": "^0.12.7",
+		"winston": "^3.8.0"
+	}
+}
