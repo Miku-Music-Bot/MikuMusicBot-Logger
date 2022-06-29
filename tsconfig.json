@@ -1,18 +1,12 @@
 {
 	"compilerOptions": {
-		"outDir": "./lib",
-		"module": "CommonJS",
-		"allowJs": true,
-		"target": "es5",
-		"noImplicitReturns": true,
-		"noImplicitAny": true,
-		"noFallthroughCasesInSwitch": true,
-		"esModuleInterop": true,
-		"noEmitOnError": true,
-		"moduleResolution": "Node",
-		"skipLibCheck": true
+	  "target": "es5",
+	  "module": "CommonJS",
+	  "esModuleInterop": true,
+	  "declaration": true,
+	  "outDir": "./lib",
+	  "strict": true
 	},
-	"include": [
-		"./src/**/*.ts"
-	]
-}
+	"include": ["src"],
+	"exclude": ["node_modules"]
+  }
